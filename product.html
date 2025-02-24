@@ -1,0 +1,81 @@
+div class="cake-item" data-id="2">
+  <h2>Vanilla Cake</h2>
+  <img src="image4.jpg" alt="Vanilla Cake" class="cake-image" />
+  <p class="price">
+    <span class="discounted-price">₹280.00</span>
+  </p>
+  <div class="rating" data-rating="3"></div>
+</div>
+
+<div class="cake-item" data-id="3">
+  <h2>Strawberry Cake</h2>
+  <img src="strawberry1.jpg" alt="Strawberry Cake" class="cake-image" />
+  <p class="price">
+    <span class="discounted-price">₹540.00</span>
+  </p>
+  <div class="rating" data-rating="5"></div>
+  <a href="cake.html">back to home</a>
+</div>
+
+<!-- Cart Section -->
+<div class="cart">
+  <h3>Your Cart</h3>
+  <ul class="cart-items"></ul>
+  <p>Total: <span class="cart-total">₹0.00</span></p>
+  <button class="checkout">Checkout</button>
+</div><script>
+    let cart = [];
+  
+    // Function to update the cart display
+    function updateCart() {
+      const cartItemsContainer = document.querySelector('.cart-items');
+      const cartTotalElement = document.querySelector('.cart-total');
+      let cartTotal = 0;
+      
+      // Clear the current cart items display
+      cartItemsContainer.innerHTML = '';
+  
+      // Add each item in the cart
+      cart.forEach((item) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - ₹${item.price}`;
+        cartItemsContainer.appendChild(listItem);
+  
+        // Update total price
+        cartTotal += item.price;
+      });
+  
+      // Update total price display
+      cartTotalElement.textContent = `₹${cartTotal.toFixed(2)}`;
+    }
+    function addToCart(cakeId, name, price) {
+      cart.push({ id: cakeId, name: name, price: price });
+      updateCart();
+    }
+  
+    // Attach event listeners to cake images
+    document.querySelectorAll('.cake-image').forEach((image) => {
+      image.addEventListener('click', () => {
+        const cakeElement = image.closest('.cake-item');
+        const cakeId = cakeElement.getAttribute('data-id');
+        const cakeName = cakeElement.querySelector('h2').textContent;
+        const cakePrice = parseFloat(cakeElement.querySelector('.discounted-price').textContent.replace('₹', ''));
+  
+        addToCart(cakeId, cakeName, cakePrice);
+      });
+    });
+  
+    // Function for Checkout
+    document.querySelector('.checkout').addEventListener('click', function() {
+      if (cart.length === 0) {
+        alert('Your cart is empty!');
+        return;
+      }
+  
+      alert('Order placed successfully! Total: ' + document.querySelector('.cart-total').textContent);
+      
+      // Clear the cart after checkout
+      cart = [];
+      updateCart();
+    });
+  </script>

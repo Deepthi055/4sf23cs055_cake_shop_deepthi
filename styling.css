@@ -1,0 +1,948 @@
+.h1{
+  text-align: center;
+  color:pink;
+}
+.navbar ul{
+ list-style-type: none;
+ padding-inline: none;
+}
+.navi li{
+  display: inline;
+  padding:1px;
+}
+.navi{
+  background-color:rgb(81, 8, 44);
+}
+.navi a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.searchtab{
+  text-align:0px 0px 20px;
+  text-align: right;
+  color: #aaa;
+}
+.span{
+  color: black;
+  box-align:box ;
+}
+
+
+
+.navbar ul {
+  list-style-type: none;  
+  padding: 0;             
+  margin: 0;              
+  display: flex;         
+  justify-content: space-around; 
+}
+
+
+.navbar ul li a {
+  color: white;           
+  text-decoration: none;  
+  padding: 20px 20px;     
+  display: block;         
+}
+ 
+.navbar ul li a:hover {
+  background-color: #575757; 
+}
+.search-container {
+  position: relative;
+  width: 300px;
+}
+.search-container{
+  position: relative;
+  padding-right: 0%;
+  align-content: space-around;
+  
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 35px; 
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container i {
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #aaa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+
+header {
+  background-color: #f4a261;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Slider Styles */
+.slider {
+  padding: 40px 0;
+  background-color: #fefae0;
+  text-align: center;
+}
+
+.slider h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: hidden;
+  animation: slide-horizontal 15s linear infinite;
+}
+
+.image-container {
+  width: 150px;
+  text-align: center;
+}
+
+.circular-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Blinking Effect */
+@keyframes blink-text {
+  50% {
+      opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink-text 1.5s steps(5, start) infinite;
+}
+
+/* Featured Cakes */
+.featured {
+  padding: 40px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.featured-cakes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cake {
+  width: 200px;
+}
+
+.cake img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #f4a261;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+.input-group button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #21867a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a9d8f;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+/* Header */
+header {
+  background-color: #f4a261;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* About Us Section */
+.about-us-section {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-section h1 {
+  font-size: 36px;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.about-us-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Our Story Section */
+.our-story {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.our-story h2 {
+  font-size: 30px;
+  color: #264653;
+  margin-bottom: 20px;
+}
+
+.our-story p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision div {
+  width: 45%;
+}
+
+.mission-vision h2 {
+  font-size: 30px;
+  color: #e76f51;
+  margin-bottom: 15px;
+}
+
+.mission-vision p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Our Team Section */
+.our-team {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+.our-team h2 {
+  font-size: 30px;
+  color: #264653;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  color: #2a9d8f;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #2a9d8f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #f4a261;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.cake-list {
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+
+.cake-item {
+  width: calc(33% - 20px);
+  box-sizing: border-box; 
+  text-align: center;
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+}
+
+
+.cake-image {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 10px; 
+}
+
+
+/* Cart Section */
+.cart-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.cart-section h1 {
+  font-size: 36px;
+  color: #2a9d8f;
+  margin-bottom: 30px;
+}
+
+/* Cart Table */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.cart-table th, .cart-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #2a9d8f;
+  color: white;
+  font-size: 18px;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+}
+
+.cart-product img {
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.cart-product h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.cart-product p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Cart Summary */
+.cart-summary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: right;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.cart-summary h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+
+.cart-summary p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cart-summary p span {
+  font-weight: bold;
+}
+
+.cart-summary .checkout-btn, .cart-summary .continue-btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.checkout-btn {
+  background-color: #e76f51;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.continue-btn {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.checkout-btn:hover {
+  background-color: #d65f44;
+}
+
+.continue-btn:hover {
+  background-color: #228a74;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #d65f44;
+}
+
+/* Footer */
+footer {
+  background-color: #2a9d8f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.slider-container{
+  width: 100%;
+  overflow: hidden;
+  position:relative
+}
+.slider-container {
+  display: flex; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+ Individual images *
+.slider-container img {
+  width: 50%; /* Each image takes up the full width of the container */
+  max-width: 100%; /* Make sure the images do not stretch */
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
+img {
+  margin-right: 20px;  
+}
+.circular-image {
+  width: 200px;  
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+ .h3{
+  text-align: justify;
+  color: #333; 
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.circular-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f8b400;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h3 {
+  margin-top: 10px; /* Adjust space between image and text */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Align text in the center */
+}
+
+#image{
+  width: 200px;
+  height:150px;
+  border-radius: 50%;
+  padding: 20px;
+  border: 2px solid orange;
+  font-family:cursive;
+}
+ #image img{
+  width: 100%;
+  height:100%;
+  border-radius: 50%;
+  object-fit:cover;
+} 
+.slider-container{
+  width: 100%;
+  overflow: hidden;
+  position:relative
+}
+.slider-container {
+  display: flex; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+ Individual images *
+.slider-container img {
+  width: 50%; 
+  max-width: 100%; 
+}
+
+.button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
+.img {
+  margin-right: 20px; /
+}
+
+.body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for full-width image */
+.box-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Image that fills the entire width */
+.box {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+.curved-image {
+  width: 300px;
+  height: auto;
+  border-radius: 20px; /* Adjust the value to control how curved the corners are */
+}
+#box{
+  background-color:whitesmoke;
+  align-content: center;
+  margin:0px 160px 0px 160px;
+}
+.starters{
+  display:flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+}
+.Maincourse{
+  display:flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+}
+.Desserts{
+  display:flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+}
+
+#starter1,#starter2,#starter3{
+ padding:15px;
+ margin-bottom:20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ width:150px;
+}
+#Maincourse1,#Maincourse2,#Maincourse3{
+  padding:15px;
+ margin-bottom:20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ width:150px;
+}
+#Desserts1,#Desserts2,#Desserts3{
+  padding:15px;
+ margin-bottom:20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ width:150px;
+}
+.h1{
+  text-align: center;
+}
+#box {
+  background-color: whitesmoke;
+  margin: 0px auto; /* Center the box horizontally */
+  max-width: 1000px; /* Limit the maximum width for larger screens */
+  padding: 20px;
+}
+
+.cakes, .Maincourse, .Desserts {
+  display: flex;
+  justify-content: space-around; /* Space between each item */
+  flex-wrap: nowrap; /* Ensures items stay in one line */
+  gap: 20px; /* Optional: Adds space between the items */
+}
+
+.menu-item {
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center; /* Ensure content inside is centered */
+  background-color: white;
+}
+#box{
+  background-color:whitesmoke;
+  align-content: center;
+  margin:0px 160px 0px 160px;
+}
+.cakes{
+  display:flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+}
+.Maincourse{
+  display:flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+}
+.Desserts{
+  display:flex;
+  justify-content: space-around ;
+  flex-wrap: wrap;
+}
+
+#cake1,#cake2,#cake3{
+ padding:15px;
+ margin-bottom:20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ width:150px;
+}
+#Maincourse1,#Maincourse2,#Maincourse3{
+  padding:15px;
+ margin-bottom:20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ width:150px;
+}
+#Desserts1,#Desserts2,#Desserts3{
+  padding:15px;
+ margin-bottom:20px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ width:150px;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.discounted-price {
+  color: green;
+  margin-left: 10px;
+}
+
+.offer {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 20px;
+  color: grey;
+}
+
+.rating .filled {
+  color: gold;
+}
+.cake-image {
+  width: 200px;
+  height: auto;
+  cursor: pointer; /* Makes the image clickable */
+  margin-top: 10px;
+}
+
+.cake-image:hover {
+  transform: scale(1.05); /* Slight zoom effect when hovering */
+  transition: transform 0.3s ease;
+}
+
+
+
+
+

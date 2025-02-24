@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="cake-detail">
+        <h1>Venilla Cake</h1>
+        <img src="image7.jpg" width="300" height="200">
+        <p><strong>Price: &#8377;280</strong></p>
+        <button class="add-to-cart">Add to Cart</button>
+
+        <!-- Feedback Section -->
+        <h2>Customer Feedback</h2>
+        <ul class="feedback-list">
+            <li><strong>John:</strong> Amazing cake! Loved the taste. ⭐⭐⭐⭐⭐</li>
+            <li><strong>Ravi:</strong> Good but a bit too sweet for my liking. ⭐⭐⭐⭐</li>
+        </ul>
+
+        <p><a href="cake.html">Back to Home</a></p>
+    </div>
+
+    <script>
+        // Simple cart functionality
+        let cart = [];
+
+        document.querySelector('.add-to-cart').addEventListener('click', function () {
+            const cake = {
+                id: 1,
+                name: "Vanilla Cake",
+                price: 500
+            };
+            cart.push(cake);
+            alert('Chocolate Cake added to the cart!');
+        });
+    </script>
+</body>
+</html>

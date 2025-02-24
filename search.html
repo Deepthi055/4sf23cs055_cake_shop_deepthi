@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Cakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section with Search -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for cakes...">
+        </div>
+    </header>
+
+    <!-- Cake Listings -->
+    <section class="cakes-section">
+        <div id="cake-list">
+            <div class="cake" data-name="Chocolate Cake">
+                <img src="cake1.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Price: &#8377;500</p>
+            </div>
+
+            <div class="cake" data-name="Vanilla Cake">
+                <img src="cake2.jpg" alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>Price: &#8377;350</p>
+            </div>
+
+            <div class="cake" data-name="Red Velvet Cake">
+                <img src="cake3.jpg" alt="Red Velvet Cake">
+                <h3>Red Velvet Cake</h3>
+                <p>Price: &#8377;600</p>
+            </div>
+
+            <div class="cake" data-name="Black Forest Cake">
+                <img src="cake4.jpg" alt="Black Forest Cake">
+                <h3>Black Forest Cake</h3>
+                <p>Price: &#8377;450</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('searchInput');
+      const cakes = document.querySelectorAll('.cake');
+  
+      // Search Function
+      searchInput.addEventListener('input', function() {
+          const query = searchInput.value.toLowerCase();
+  
+          cakes.forEach(function(cake) {
+              const cakeName = cake.getAttribute('data-name').toLowerCase();
+  
+              // Toggle display of cakes based on search query
+              if (cakeName.includes(query)) {
+                  cake.style.display = 'block';
+              } else {
+                  cake.style.display = 'none';
+              }
+          });
+      });
+  });
+  </script>
+</body>
+</html>
